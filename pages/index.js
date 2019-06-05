@@ -1,5 +1,24 @@
-export default () => (
+import fetch from 'isomorphic-unfetch';
+
+const Index = props => (
   <div>
-    <p>Hello World!</p>
+    <h1>Derp, here's the data</h1>
+    {data}
   </div>
 )
+
+Index.getInitialProps = async function() {
+  const res = await fetch('https://matthras.zendesk.com/api/v2/tickets.json', {
+      "method": "GET",
+      headers: {
+        "Authorization": "Basic bWF0dGhldy55LnAubWFja0BnbWFpbC5jb206eldjYWV4cWRa"
+      }
+    });
+  const data = await res.json();
+  return {
+    data: JSON.stringify(data)
+  }
+}
+
+
+export default Index;
