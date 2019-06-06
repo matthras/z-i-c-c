@@ -110,3 +110,18 @@ I'm not familiar with how many different HTTP status codes there are, but I've f
 Right now I don't know which ones are important and need to be handled differently, but that's for another day.
 
 It's 11pm, I've spent 3 hours on this today. Signing off!
+
+## Wednesday 5th June
+
+I've only just started writing this at 6pm where the only things I've done so far is actually commit yesterday's changes (and trying to reverse a commit where I accidentally added too many files!). It's been a *very* lazy day and I'm behind on actual work, so I'm just going to focus on simple things tonight.
+
+* Create a branch and start a working draft rewrite of README.md (from the default) with instructions on installation, environment variables, awareness of this blog, how to run this app in production, and whatever else I can think of.
+* Create my .env file, add it to .gitignore then refactor index.js
+
+### Accidentally stored my Base64 hash in a commit, whoops!
+
+Early in the commit history you'll notice that I tried to reverse a commit. This is because I had saved the Base64 hash of the email + password combo for accessing my Zendesk API, which is a huge no no since a Base64 hash is reversible!
+
+Optimally, what I should do is reverse the commits and completely remove all trace of it, but I'll admit I'm not too keen on digging into git details and potentially messing something up. The easier and lazier solution is to change my password on my Zendesk account. This is mainly because my API url is pretty obvious (since my internet moniker is 'matthras'), and the email is one that I also use fairly frequently, so it leaves it down to my password to be the sole security measure against any illegial logins.
+
+So the lesson learnt is that when building a fullstack app I should always start by creating a .env file and populating it with details that would otherwise change if the app was moved elsewhere. Whew!
