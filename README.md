@@ -44,6 +44,11 @@ yarn test
 
 ## Key Decisions
 
+**Next.js**
+
+* I didn't want to do a Node + Express setup mainly because I still don't have a solid conceptual model of it all in my head, and in my limited time it felt most suitable to find a prepackaged full-stack solution.
+* I'd dabbled a bit in React and one of the things on my 'to learn' list was server-side rendering in React, AKA Next.js
+* 
 
 
 ## Lessons Learnt
