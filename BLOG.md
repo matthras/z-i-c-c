@@ -125,3 +125,13 @@ Early in the commit history you'll notice that I tried to reverse a commit. This
 Optimally, what I should do is reverse the commits and completely remove all trace of it, but I'll admit I'm not too keen on digging into git details and potentially messing something up. The easier and lazier solution is to change my password on my Zendesk account. This is mainly because my API url is pretty obvious (since my internet moniker is 'matthras'), and the email is one that I also use fairly frequently, so it leaves it down to my password to be the sole security measure against any illegial logins.
 
 So the lesson learnt is that when building a fullstack app I should always start by creating a .env file and populating it with details that would otherwise change if the app was moved elsewhere. Whew!
+
+## Thursday 6th June
+
+I'm only writing this now at 11pm because I've been busy all day :(
+
+On Wednesday I created the .env file and added it to .gitignore. That's all I've done. Unlikely I'll be able to work on this tonight, which I find frustrating - the nature of my work at the moment means that sometimes I have extremely busy periods where I can't carve out time for regular coding, whereas I definitely function best if I do a little bit of regular coding every day.
+
+## Tuesday 11th June
+
+Goodness me, a 4-5 day break. Basically, a glut of work over the weekend :(
