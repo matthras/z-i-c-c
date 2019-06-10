@@ -1,48 +1,44 @@
-# Example app with React Testing Library and Jest
+# Matthew Mack's ZenDesk Internship Coding Challenge Submission
 
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+## Instructions for Setup & Deployment
 
 ```bash
-npx create-next-app --example with-jest-react-testing-library with-rtl-app
-# or
-yarn create next-app --example with-jest-react-testing-library with-rtl-app
+git clone https://github.com/matthras/z-i-c-c
+cd z-i-c-c
+yarn
 ```
 
-### Download manually
+In the folder itself, create a .env file with the following parameters:
 
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-jest
-cd with-jest-react-testing-library
+```env
+API_URL=
+USERNAME=
+PASSWORD=
 ```
 
-Install it and run:
+The details needed for the .env file are supplied in the email sent with this application. 
+
+If this fails, the email also contains a zip file which contains the .env file with the necessary details.
+
+**Deployment**
 
 ```bash
-npm install
-npm run dev
-# or
+yarn run build
+yarn run start
+```
+
+Visit localhost:3000 in your browser to view the site.
+
+### Running Dev Version
+
+```bash
 yarn
 yarn dev
 ```
 
-## Run Tests
+### Run Tests
 
 ```bash
-npm run test
-# or
 yarn test
 ```
 
-## The idea behind the example
-
-This library encourages your applications to be more accessible and allows you to get your tests closer to using your components the way a user will, which allows your tests to give you more confidence that your application will work when a real user uses it. And also, is a replacement for enzyme.
-
-This example features:
-
-- An app with [react testing library](https://github.com/kentcdodds/react-testing-library) by [Kent Dodds](https://github.com/kentcdodds/)
