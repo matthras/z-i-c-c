@@ -134,4 +134,24 @@ On Wednesday I created the .env file and added it to .gitignore. That's all I've
 
 ## Tuesday 11th June
 
-Goodness me, a 4-5 day break. Basically, a glut of work over the weekend :(
+Morning: Goodness me, a 4-5 day break. Basically, a glut of work over the weekend :(
+
+Evening: Alright I'm writing this as I go. Starting 10pm.
+
+1. I want to make sure that my data displays on the front-end in dev mode, which means writing my React components, which means I should set up my components folder and write a Ticket component. I'm a bit rusty on writing React stuff, so fingers crossed that it works!
+2. 
+
+-- and I did some stuff and went to bed at 11pm.
+
+## Wednesday 12th June
+
+**Morning (6am-9am):** I have to head to work, so I'm rounding some things off, writing down ideas + template files (since it's unlikely that I'll be able to finish implementing all the requirements), committing them and then pushing them up so that I can pull from my repo on my laptop at work. Since I haven't worked on this project on my laptop just yet, this is a good opportunity for me to update my installation/deployment instructions on a clean system - the only thing I'm worried about is that both systems are Windows systems and I have no clue whether Macs will be any different, so what I'll probably do is update my Yarn + Node versions to the latest, and then document the version numbers in the README.
+
+In terms of development:
+
+* I've managed to get my environment variables working. The current problem now is getting the data to display properly on the front end. Using console.log I've confirmed that my API request is working, so now it's just figuring out the API parameters via the documentation, and then making sure I'm writing the right code to export them to display within components.
+* I intend to write a TicketList and a Ticket component. The TicketList will contain each Ticket component, but also the pagination at the bottom (which I might also write as a separate component, but haven't decided yet).
+* Pagination: From reading the API documentation it looks flexible enough to implement my idea: have 2 parameters (# of tickets in a single page, # of tickets requested from the server) so that both of them can be tweaked for flexibility (it'll be like, request 100 tickets from server, display 25 per page, and then request the next batch of 100 as needed). I can also use the 'count' to determine the number of pages needed by dividing it by '# of tickets in a single page'.
+* Test ideas have been written, but since I'm new to snapshot testing (only have written unit tests) I'm still feeling a bit daunted. Hopefully I'll have enough energy tonight to work on them!
+
+I think that covers most of it. Off to work!
