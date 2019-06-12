@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ticket snapshot with example ticket data should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    id="36"
+  >
+    <h2>
+      ID: 36 | Status: open | Priority: high
+    </h2>
+    <h3>
+      Subject: this is a test ticket
+    </h3>
+    <h4>
+      Description: of course this is fake
+    </h4>
+    <ul>
+      <li>
+        Created: 
+      </li>
+      <li>
+        Recipient: you!
+      </li>
+      <li>
+        URL: dummy.url
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
