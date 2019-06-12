@@ -156,8 +156,22 @@ In terms of development:
 
 I think that covers most of it. Off to work!
 
-*During work breaks throughout the day:*
+**During work breaks throughout the day:**
 
 * Successfully installed and running on laptop after updating Node + yarn. Tested with: yarn v1.16, Node v10.16
 * Managed to get data to render on the front end as a list of ticket subjects. Turns out I just wasn't accessing the correct object properties. Now I can start refactoring into components!
 * Component planning is hard.
+
+**Evening (starting 8pm):**
+
+Alright, am home, ate dinner, just checked Slack. Adel mentioned that it's better to get a bit of coverage over everything. Looks like my priorities are as follows:
+
+1. Error handling - it looks like this exclusively refers to handling different HTTP status codes. Looks like I can grab a code snippet here: https://nextjs.org/docs#custom-error-handling
+2. Tests - Since all my tests appear to be snapshot tests which I'm completely new to writing, this will probably be the hardest part. The only problem is that for my snapshot tests to work, I need to actually write the components themselves so I know how they look.
+  * If I have to write the components itself, it means I should worry about the pagination next. It also means I need to worry about having a button click to get to the next/previous pages.
+
+8:30pm: Basic error handling implemented. Right now it just renders normally if it's 200, and throws the default Next.js error page for anything above 200. I'm going to move onto writing my components so I can write my tests, since figuring out the test syntax will be the hardest part for me.
+
+9pm: Oh wow, my first component snapshot test worked! Now to attempt these 'happy path' tests.
+
+11pm: I didn't have much luck in getting the 'happy path' tests to work. I think my main problem is that googling for help just wasn't giving me the results I wanted, so I couldn't find the right examples to emulate from. I'm going to stop now and write up the rest of the README.
