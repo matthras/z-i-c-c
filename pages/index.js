@@ -4,7 +4,7 @@ const Index = props => (
   <div>
     <h1>Derp, here's the data</h1>
     <ul>
-      {props.data.map(ticket => (
+      {props.data.tickets.map(ticket => (
         <li key={ticket.id}>
           {ticket.subject}
         </li>
@@ -21,9 +21,8 @@ Index.getInitialProps = async function() {
       }
     });
   const data = await res.json();
-  console.log(data);
   return {
-    data: JSON.parse(data)
+    data: data
   }
 }
 
