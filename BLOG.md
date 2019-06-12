@@ -155,3 +155,9 @@ In terms of development:
 * Test ideas have been written, but since I'm new to snapshot testing (only have written unit tests) I'm still feeling a bit daunted. Hopefully I'll have enough energy tonight to work on them!
 
 I think that covers most of it. Off to work!
+
+*During work breaks throughout the day:*
+
+* Successfully installed and running on laptop after updating Node + yarn. Tested with: yarn v1.16, Node v10.16
+* Managed to get data to render on the front end as a list of ticket subjects. Turns out I just wasn't accessing the correct object properties. Now I can start refactoring into components!
+* Component planning is hard.
