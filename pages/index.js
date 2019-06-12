@@ -26,6 +26,7 @@ class Index extends React.Component {
 
     return(
       <div>
+        <h1>ZenDesk Ticket Data</h1>
         {this.props.data.tickets.map(ticket => (
           <Ticket
             id={ticket.id}
