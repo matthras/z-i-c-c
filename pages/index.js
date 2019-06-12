@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch';
 import React from 'react';
 import Error from 'next/error';
+import Ticket from './components/Ticket';
 
 class Index extends React.Component {
   static async getInitialProps() {
@@ -20,19 +21,23 @@ class Index extends React.Component {
   }
   render() {
     if(this.props.errorCode) {
-      return <Error statusCode={this.props.errorCode} />
+      return <Error statusCode={this.props.errorCode} /> // Default Error component that comes with Next.js
     }
 
     return(
       <div>
-        <h1>Derp, here's the data</h1>
-        <ul>
-          {this.props.data.tickets.map(ticket => (
-            <li key={ticket.id}>
-            {ticket.subject}
-            </li>
-          ))}
-        </ul>
+        {this.props.data.tickets.map(ticket => (
+          <Ticket
+            id={ticket.id}
+            status={ticket.status}
+            priority={ticket.priority}
+            subject={ticket.subject}
+            description={ticket.description}
+            created_at={ticket.created_at}
+            recipient={ticket.recipient}
+            url={ticket.url} 
+          />
+        ))}
       </div>
     ) 
   }
